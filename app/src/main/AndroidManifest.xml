@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.project.dewa">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name="com.project.dewa.activities.DetailUmkmActivity"></activity>
+        <activity
+            android:name="com.project.dewa.activities.DetailActivity"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.project.dewa.activities.TamanActivity" />
+        <activity android:name="com.project.dewa.activities.UmkmActivity" />
+        <activity android:name="com.project.dewa.activities.AirTerjunActivity" />
+        <activity android:name="com.project.dewa.activities.DesaWisataActivity" />
+        <activity android:name="com.project.dewa.activities.GiliActivity" />
+        <activity android:name="com.project.dewa.activities.PantaiActivity" />
+        <activity android:name="com.project.dewa.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyCePx59EhqBon-G-zqBuB9N7Eyy4tc-xVQ" />
+    </application>
+
+</manifest>
